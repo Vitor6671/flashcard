@@ -1,18 +1,18 @@
 :root {
-    --text-color: #ffffff;/*cor alterada*/
-    --card-front-color: #00224b;/*cor alterada para tom mais escuro*/
-    --card-back-color: #97c0b0; /*cor alterada*/
+    --text-color: #000000; /*cor alterada*/
+    --card-front-color: #63a9ff; /*cor alterada*/
+    --card-back-color: #292424; /*cor alterada*/
 }
 
 body{
-    background: url(img/bg-desktop.webp);
-    color: antiquewhite;
-    font-family: bai-Jamjuree;
+    background: url(img/arvore\ rosa.png);
+    color: rgb(0, 0, 0);
+    font-family: 'Times New Roman', Times, serif; /*fonte alterada*/
 }
 
 footer{
-    background-color: rgb(194, 118, 222);
-    color: aliceblue;
+    background-color: rgb(94, 122, 216); /*cor alterada*/
+    color: rgb(0, 0, 0);
     position: fixed;
     bottom: 0;
     width: 100%;
@@ -34,7 +34,7 @@ footer p{
 
 .cartao {
     margin: 1rem 1rem;
-    background-color: rgb(12, 62, 62);
+    background-color: rgb(0, 135, 189); /*cor alterada*/
     height: 20rem;
     flex-grow: 1;
     flex-basis: calc(33% - 6rem);
