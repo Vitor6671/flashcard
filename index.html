@@ -1,102 +1,21 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BT">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com"&gt;>
-    <link rel="stylesheet" href="assets/style.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com&quot; crossorigin>
-<link rel="stylesheet" href="assets/style.css">
-        <rel="stylesheet">
-    <title>Flashcards</title>
+    <title>Extrator de Palavras-Chave</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <main>
-        <section id="container">
-
-            <article class="cartao">
-                <div class="cartao-conteudo">
-                    <h3>Matemática</h3>
-                    <div class="cartao-conteudo-pergunta">
-                        <p> Qual é o resultado de 15 multiplicado por 7?</p>
-                    </div>
-                    <div class="cartao-conteudo-resposta">
-                        <p> 105.</p>
-                    </div>
-                </div>
-            </article>
-
-            <article class="cartao">
-                <div class="cartao-conteudo">
-                    <h3>História</h3>
-                    <div class="cartao-conteudo-pergunta">
-                        <p> Quem foi o primeiro presidente do Brasil?</p>
-                    </div>
-                    <div class="cartao-conteudo-resposta">
-                        <p> Marechal Manuel Deodoro da Fonseca.</p>
-                    </div>
-                </div>
-            </article>
-
-            <article class="cartao">
-                <div class="cartao-conteudo">
-                    <h3>Conhecimentos Gerais</h3>
-                    <div class="cartao-conteudo-pergunta">
-                        <p> Quem é o atual campeão mundial de xadrez?</p>
-                    </div>
-                    <div class="cartao-conteudo-resposta">
-                        <p> Gukesh Dommaraju.</p>
-                    </div>
-                </div>
-            </article>
-
-            <article class="cartao">
-                <div class="cartao-conteudo">
-                    <h3>Geografia</h3>
-                    <div class="cartao-conteudo-pergunta">
-                        <p>Em que continente se localiza o Brasil?</p>
-                    </div>
-                    <div class="cartao-conteudo-resposta">
-                        <p> América.</p>
-                    </div>
-                </div>
-            </article>
-
-            <article class="cartao">
-                <div class="cartao-conteudo">
-                    <h3>Conhecimentos Gerais</h3>
-                    <div class="cartao-conteudo-pergunta">
-                        <p>Que país tem o formato de uma bota?</p>
-                    </div>
-                    <div class="cartao-conteudo-resposta">
-                        <p>Itália.</p>
-                    </div>
-                </div>
-            </article>
-
-            <article class="cartao">
-                <div class="cartao-conteudo">
-                    <h3>Conhecimentos Gerais</h3>
-                    <div class="cartao-conteudo-pergunta">
-                        <p>Quem é o atual presidente da ONU?</p>
-                    </div>
-                    <div class="cartao-conteudo-resposta">
-                        <p> Guterres.</p>
-                    </div>
-                </div>
-
-            </article>
-        </section>
-
-    </main>
-    <footer>
-        <p>Projeto desenvolvido pela Alura, sem fins lucrativos</p>
-    </footer>
-    <script src="perguntas.js"></script>
-    <script src="app.js"></script>
-
+    <div class="container">
+        <h1>Extrator de palavras-chave</h1>
+        <textarea id="entrada-de-texto" placeholder="Digite ou cole seu texto aqui..."></textarea>
+        <button id="botao-palavrachave">Extrair</button>
+        <div id="resultado-palavrachave"></div>
+    </div>
+    <script src="script.js"></script>
 </body>
 
 </html>
