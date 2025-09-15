@@ -1,9 +1,13 @@
 const botaoMostraPalavras = document.querySelector("#botao-palavrachave");
-botaoMostraPalavras.addEventListener("click" , MostrarPalavraChave)
-function MostrarPalavraChave(){
-    const texto = document.querySelector("#entrada-de-texto").value
-    const campoResultado = document.querySelector("#resultado-palavrachave");
-    campoResultado.textContent = texto;
-    const palavras = texto.split(" ");
-    campoResultado.textContent = palavras.join(" , ");
+botaoMostraPalavras.addEventListener("click" , MostraPalavrasChave);
+function MostraPalavrasChave(){
+const texto = document.querySelector("#entrada-de-texto").value;
+const campoResultado = document.querySelector("#resultado-palavrachave");
+campoResultado.textContent = texto;
+const palavrasChave = processaTexto(texto);
+campoResultado.textContent = palavras.join(" , ");
+}
+function processaTexto(texto){
+    let palavras = texto.split(/\P{L}+/u);
+    return palavras;
 }
